@@ -1,0 +1,195 @@
+/* =========================================================
+   DN云导航站 · Instagram 主页风主题 (Instagram Light)
+   叠加在 themes/hugo-webstack/static/css/nav.css 之上
+   仅覆盖样式，不修改主题原文件
+   配色：纯白底 + #fafafa 区块 + #dbdbdb 浅灰边框
+         + IG 五色渐变(黄/橙/玫红/紫/蓝)作强调
+         + #262626 / #8e8e8e 标准文字灰
+   ========================================================= */
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700&family=Noto+Sans+SC:wght@400;500;700&display=swap');
+
+:root{
+  --accent:        #d62976;   /* 主强调：IG 玫红 */
+  --accent-2:      #962fbf;   /* 次强调：IG 紫 */
+  --ig:            linear-gradient(45deg,#feda75,#fa7e1e,#d62976,#962fbf,#4f5bd5); /* IG 标志渐变 */
+  --glass:         #ffffff;
+  --glass-strong:  #ffffff;
+  --glass-border:  #dbdbdb;   /* IG 浅灰边框 */
+  --ink:           #262626;   /* IG 主文字 */
+  --ink-soft:      #8e8e8e;   /* IG 次文字 */
+  --radius:        14px;
+  --shadow:        0 1px 2px rgba(0,0,0,.06), 0 6px 18px rgba(0,0,0,.05);
+  --font: 'Sora','Noto Sans SC',-apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei",sans-serif;
+}
+
+/* ---------- 背景：干净纯色（无极光） ---------- */
+body{
+  font-family: var(--font);
+  color: var(--ink);
+  background: transparent;
+}
+body::before{
+  content:""; position:fixed; inset:0; z-index:-3;
+  background: linear-gradient(180deg,#ffffff 0%,#fafafa 100%);
+}
+
+/* ---------- 侧边栏：纯白 ---------- */
+.sidebar-menu{
+  width:450px;
+  background: #ffffff !important;
+  border-right: 1px solid var(--glass-border);
+}
+.sidebar-menu .logo-env{ border-bottom: 1px solid #efefef; padding:18px 24px; }
+.sidebar-menu .logo-env .logo{ display:flex; align-items:center; gap:12px; }
+.sidebar-menu .logo-env .logo-expanded{ display:flex; align-items:center; font-weight:700; letter-spacing:.5px; }
+.sidebar-menu .logo-env .logo-expanded img{ border-radius:10px; }
+.logo-text{ display:flex; flex-direction:column; line-height:1.15; }
+.logo-text b{
+  font-size:18px; font-weight:700; letter-spacing:.5px;
+  background: var(--ig);
+  -webkit-background-clip: text; background-clip: text;
+  -webkit-text-fill-color: transparent; color: transparent;
+}
+.logo-text .logo-sub{ color: var(--ink-soft); font-size:12.5px; font-weight:600; letter-spacing:3px; margin-top:3px; }
+
+.sidebar-menu .main-menu{ padding: 16px 20px; }
+.sidebar-menu .main-menu a{
+  display:flex; align-items:center;
+  color: rgba(38,38,38,.72);
+  border-bottom: 1px solid #f2f2f2;
+  border-radius: 11px;
+  padding: 11px 14px;
+  margin: 3px 0;
+  font-size:14px; font-weight:500; line-height:1.4;
+  transition: background .25s, color .25s, transform .25s;
+}
+.sidebar-menu .main-menu a>i{
+  flex:0 0 auto; width:22px; text-align:center; margin-right:12px;
+  font-size:15px; color: rgba(38,38,38,.55); transition: color .25s;
+}
+.sidebar-menu .main-menu a>span.title{
+  flex:1 1 auto; white-space:nowrap; overflow:hidden; text-overflow:ellipsis;
+}
+.sidebar-menu .main-menu ul{ margin:2px 0 6px; padding-left:34px; }
+.sidebar-menu .main-menu ul a{
+  font-size:13px; padding:8px 12px; color:rgba(38,38,38,.5); border-bottom:none;
+}
+.sidebar-menu .main-menu ul a:hover{ color:#262626; background:#fafafa; }
+.sidebar-menu .main-menu a:hover{
+  color:#262626; background: #fafafa; transform: translateX(3px);
+}
+.sidebar-menu .main-menu li.active > a{
+  color:#262626; font-weight:600;
+  background: #fafafa;
+  border-left: 3px solid var(--accent);
+}
+.sidebar-menu .main-menu li.active > a > i{ color: var(--accent); }
+
+/* ---------- 顶部栏：纯白 ---------- */
+.navbar.user-info-navbar .navbar-content{
+  background: #ffffff !important;
+  border-bottom: 1px solid var(--glass-border);
+}
+.navbar.user-info-navbar .navbar-content,
+.navbar.user-info-navbar .navbar-content a{ color: var(--ink); }
+
+/* ---------- 区块标题 ---------- */
+h4.text-gray{
+  color:#262626 !important;
+  font-weight:700; font-size:18px; letter-spacing:.4px;
+  padding-left:15px; position:relative;
+  margin: 30px 0 16px;
+  display:inline-block;
+}
+h4.text-gray::before{
+  content:""; position:absolute; left:0; top:50%; transform:translateY(-50%);
+  width:5px; height:19px; border-radius:3px;
+  background: var(--ig);
+}
+h4.text-gray i{ color: var(--accent); }
+
+/* ---------- 卡片：白底 + 浅灰边框 ---------- */
+.xe-card{ position:relative; height:92px; margin-bottom:18px; animation: rise .55s both; }
+.xe-card:nth-child(2){ animation-delay:.04s }
+.xe-card:nth-child(3){ animation-delay:.08s }
+.xe-card:nth-child(4){ animation-delay:.12s }
+.xe-card:nth-child(5){ animation-delay:.16s }
+.xe-card:nth-child(6){ animation-delay:.20s }
+.xe-card:nth-child(7){ animation-delay:.24s }
+.xe-card:nth-child(8){ animation-delay:.28s }
+@keyframes rise{ from{ opacity:0; transform:translateY(16px); } to{ opacity:1; transform:none; } }
+
+.xe-widget.xe-conversations{
+  position:absolute; top:0; bottom:0; left:0; right:0;
+  margin:0 12px;
+  background: var(--glass) !important;
+  border: 1px solid var(--glass-border);
+  border-radius: var(--radius);
+  padding: 14px 18px;
+  color: var(--ink);
+  box-shadow: var(--shadow);
+  overflow:hidden;
+  transition: transform .3s cubic-bezier(.2,.7,.2,1), box-shadow .3s, border-color .3s;
+}
+.xe-widget.xe-conversations::after{          /* 悬停光晕（IG 渐变弱印） */
+  content:""; position:absolute; inset:0;
+  background: linear-gradient(135deg, rgba(214,41,118,.10), rgba(150,47,191,.06));
+  opacity:0; transition: opacity .3s;
+}
+.xe-widget.xe-conversations:hover{
+  transform: translateY(-6px);
+  border-color: var(--accent);
+  box-shadow: 0 16px 40px rgba(214,41,118,.16), 0 0 0 1px rgba(214,41,118,.12);
+}
+.xe-widget.xe-conversations:hover::after{ opacity:1; }
+.xe-widget.xe-conversations:hover,
+.xe-widget.xe-conversations:focus{ background: var(--glass-strong) !important; text-decoration:none; }
+
+/* 卡片内部：图标 + 文案 横向居中、对齐协调 */
+.xe-comment-entry{ display:flex; align-items:center; gap:14px; height:100%; }
+.xe-comment-entry img, .xe-user-img img{
+  flex:0 0 auto; float:none;
+  width:44px; height:44px; border-radius:12px;
+  border:1px solid var(--glass-border);
+  background: #fafafa;
+  padding:3px; object-fit:cover;
+  box-shadow:0 1px 3px rgba(0,0,0,.08);
+  transition: transform .35s ease;
+}
+.xe-widget.xe-conversations:hover .xe-comment-entry img{ transform: scale(1.06) rotate(-4deg); }
+
+/* 文案 */
+.xe-comment{ flex:1 1 auto; min-width:0; }
+.xe-user-name strong{ color:#262626; font-weight:600; font-size:14.5px; letter-spacing:.2px; }
+.xe-comment p{ color: var(--ink-soft); font-size:12px; line-height:1.45; margin:3px 0 0;
+  display:-webkit-box; -webkit-line-clamp:1; -webkit-box-orient:vertical; overflow:hidden; }
+
+/* ---------- 搜索浮层 ---------- */
+#overlay{ background: rgba(0,0,0,.45) !important; }
+#search-box{
+  background: #ffffff !important;
+  border:1px solid var(--glass-border);
+  border-radius:20px;
+  box-shadow:0 30px 80px rgba(0,0,0,.18);
+}
+#search-input{
+  background: #fafafa; border:1px solid #efefef;
+  color:#262626; border-radius:12px;
+}
+#search-input::placeholder{ color: #8e8e8e; }
+
+/* ---------- 页脚 ---------- */
+footer.main-footer{
+  background: transparent !important;
+  color: #8e8e8e;
+  border-top:1px solid #efefef;
+}
+
+/* ---------- 降级 ---------- */
+@media (prefers-reduced-motion: reduce){
+  *{ animation:none !important; transition:none !important; }
+}
+@media (max-width: 768px){
+  .xe-card{ height:84px; }
+  .sidebar-menu{ width:300px; }
+}
