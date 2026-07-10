@@ -53,5 +53,51 @@
 
     $(window).on("scroll", onScroll);
     onScroll(); // 进入页面时先判定一次
+
+
+    /* ---------- 3) 悬停浮层：保留所有 tooltip，统一置顶，不被卡片遮挡 ----------
+       主题 nav.js 给所有卡片都初始化了 Bootstrap tooltip，
+       普通卡片 tooltip=文字介绍、二维码卡片 tooltip=<img>（二维码图）。
+       需求：悬停弹出的文字/二维码都要"置顶显示"，不被旁边卡片盖住。
+       做法：先销毁主题默认初始化（它默认 z-index 不够、可能挂错容器），
+       再统一重新初始化——html:true 让图片/文字都正确渲染，
+       container:'body' + 极高 z-index 确保浮层挂在 body 下、浮在最上层。 */
+    function fixTooltips() {
+      if (!window.jQuery || !$.fn.tooltip) return;
+      // 销毁主题已初始化的 tooltip（保险：try-catch）
+      try { $('[data-toggle="tooltip"]').tooltip('destroy'); } catch (e) {}
+
+      // 重新初始化全部卡片 tooltip：挂到 body、层级最高、文字与图片都渲染
+      $('[data-toggle="tooltip"]').tooltip({
+        html: true,
+        container: 'body',
+        placement: 'bottom',
+        viewport: 'body'
+      });
+    }
+    fixTooltips();                 // DOM ready 后先执行一次
+    $(window).on('load', fixTooltips); // 等图片/异步资源完成后再保险执行一次
+
+
+    /* ---------- 4) 搜索“常用”组排序：Google → Bing → 百度 ----------
+       不动主题 search.html，直接用 JS 重排“常用”组的引擎顺序，
+       并把 Google 设为默认选中。 */
+    function reorderSearch() {
+      var $groupA = $('.search-group.group-a');
+      if (!$groupA.length) return;
+      var $g = $groupA.find('#type-google').closest('li');
+      var $b = $groupA.find('#type-bing1').closest('li');
+      var $a = $groupA.find('#type-baidu').closest('li');
+      if ($g.length && $b.length && $a.length) {
+        var $ul = $groupA.find('ul.search-type');
+        $ul.append($g).append($b).append($a);     // 重排：Google → Bing → 百度
+        $a.find('input').prop('checked', false);  // 取消百度默认
+        $g.find('input').prop('checked', true);   // Google 默认选中
+      }
+    }
+    reorderSearch();                 // DOM ready 后执行
+    $(window).on('load', reorderSearch); // 保险再执行一次
+
+
   });
 })(jQuery);
