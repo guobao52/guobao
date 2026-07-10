@@ -99,5 +99,22 @@
     $(window).on('load', reorderSearch); // 保险再执行一次
 
 
+    /* ---------- 5) 搜索类型切换按钮显示当前分类名 ----------
+       左侧 .s-type > span 原本为空，导致显示成空白方块。
+       这里把它同步为当前激活分组的 .type-text 文字（如“常用”）。 */
+    function syncSearchTypeLabel() {
+      var $active = $('.search-group').filter(function () {
+        return $(this).css('display') !== 'none';
+      }).first();
+      var text = $active.find('.type-text').text().trim();
+      if (text) $('.s-type > span').text(text);
+    }
+    syncSearchTypeLabel();
+    $(document).on('change', 'input[name="type"]', syncSearchTypeLabel);
+    $(document).on('click', '.s-type-list label', function () {
+      setTimeout(syncSearchTypeLabel, 10); // 等主题 JS 切换完 display 再读取
+    });
+
+
   });
 })(jQuery);
