@@ -256,7 +256,7 @@ ul.search-type li input:checked + label{
 ul.search-type li input:checked + label span{ color:#fff !important; }
 
 /* 输入框 + 搜索按钮 */
-#super-search-fm{ display:flex; gap:10px; align-items:center; margin-top:6px; }
+#super-search-fm{ display:flex; gap:10px; align-items:stretch; margin-top:6px; }
 #search-text{
   flex:1 1 auto; width:100% !important; height:48px;
   padding:0 18px;
@@ -272,14 +272,19 @@ ul.search-type li input:checked + label span{ color:#fff !important; }
 }
 #search-text::placeholder{ color:var(--ink-soft); }
 #super-search-fm button{
-  flex:0 0 auto; width:52px; height:48px;
+  flex:0 0 auto; width:52px; min-height:48px;
   border:0; border-radius:12px;
   background:var(--ig) !important; color:#fff !important; font-size:16px;
   cursor:pointer; transition:transform .2s, opacity .2s;
   display:flex; align-items:center; justify-content:center;
+  position:relative;
   padding:0; line-height:1;
 }
-#super-search-fm button i{ margin:0; line-height:1; }
+#super-search-fm button i{
+  display:block; margin:0; line-height:1;
+  position:absolute; left:50%; top:50%;
+  transform:translate(-50%, -50%);
+}
 #super-search-fm button:hover{ transform:scale(1.04); opacity:.92; }
 
 /* 切换类型的小按钮 + 下拉面板 */
