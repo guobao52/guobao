@@ -185,6 +185,111 @@ footer.main-footer{
   border-top:1px solid #efefef;
 }
 
+/* =========================================================
+   修复 1：悬停浮层统一置顶显示
+   - 普通卡片：悬停弹出的文字介绍气泡要浮在最上层，不被卡片遮挡
+   - 二维码卡片：悬停弹出的二维码浮层同样要浮在最上层
+   做法：把 .tooltip 层级提到最高，并把 .tooltip-inner 统一美化成
+   白底卡片 + 浅灰边 + 阴影。JS 里会重新初始化 tooltip，挂到 body 下。
+   ========================================================= */
+.tooltip{ z-index: 99999 !important; }
+/* 悬停浮层（文字介绍 / 二维码）统一置顶显示，不被卡片遮挡 */
+.tooltip-inner{
+  background:#fff !important;
+  color:#262626 !important;
+  border:1px solid var(--glass-border);
+  border-radius:12px;
+  padding:10px 12px;
+  max-width:240px;
+  font-size:13px;
+  line-height:1.5;
+  text-align:left;
+  box-shadow:0 12px 30px rgba(0,0,0,.18);
+}
+.tooltip.bottom .tooltip-arrow{ border-bottom-color:#fff !important; }
+.tooltip.top    .tooltip-arrow{ border-top-color:#fff !important; }
+.tooltip.left   .tooltip-arrow{ border-left-color:#fff !important; }
+.tooltip.right  .tooltip-arrow{ border-right-color:#fff !important; }
+
+/* =========================================================
+   修复 2：搜索栏突出显示（不再和纯白背景融为一体）
+   ========================================================= */
+#search{
+  background:#ffffff;
+  border:1px solid var(--glass-border);
+  border-radius:var(--radius);
+  padding:16px 18px;
+  box-shadow:var(--shadow);
+  max-width:760px;
+  margin:18px auto 14px !important;
+}
+.s-search #search-list{ margin-bottom:12px; }
+
+/* 分组标签：常用 / 搜索 / 工具 / 社区 / 生活 / 求职 */
+.search-group .type-text{
+  color:var(--ink-soft);
+  font-weight:600; font-size:12.5px; letter-spacing:.5px;
+  padding:0 4px;
+}
+/* 引擎标签：百度 / Google / Bing ... */
+ul.search-type{
+  display:flex; flex-wrap:wrap; gap:6px;
+  padding:0; margin:6px 0 0; list-style:none;
+}
+ul.search-type li label{
+  display:inline-block; padding:5px 12px;
+  border:1px solid var(--glass-border); border-radius:20px;
+  background:#fff; font-size:13px; cursor:pointer;
+  transition:all .2s;
+}
+ul.search-type li label:hover{
+  border-color:var(--accent); background:rgba(214,41,118,.06);
+  box-shadow:0 2px 8px rgba(214,41,118,.12);
+}
+ul.search-type li input:checked + label{
+  border-color:transparent; background:var(--ig);
+}
+ul.search-type li input:checked + label span{ color:#fff !important; }
+
+/* 输入框 + 搜索按钮 */
+#super-search-fm{ display:flex; gap:10px; align-items:center; margin-top:6px; }
+#search-text{
+  flex:1 1 auto; width:100% !important; height:48px;
+  padding:0 18px;
+  border:1px solid #efefef !important; border-radius:12px !important;
+  background:#fafafa !important;
+  box-shadow:inset 0 1px 3px rgba(0,0,0,.04);
+  font-size:15px; color:var(--ink);
+  transition:border-color .2s, box-shadow .2s, background .2s;
+}
+#search-text:focus{
+  border-color:var(--accent) !important; background:#fff !important;
+  box-shadow:inset 0 1px 3px rgba(0,0,0,.04), 0 0 0 3px rgba(214,41,118,.10);
+}
+#search-text::placeholder{ color:var(--ink-soft); }
+#super-search-fm button{
+  flex:0 0 auto; width:52px; height:48px;
+  border:0; border-radius:12px;
+  background:var(--ig) !important; color:#fff !important; font-size:16px;
+  cursor:pointer; transition:transform .2s, opacity .2s;
+}
+#super-search-fm button:hover{ transform:scale(1.04); opacity:.92; }
+
+/* 切换类型的小按钮 + 下拉面板 */
+.s-type > span{
+  display:inline-block; width:34px; height:34px;
+  border:1px solid var(--glass-border); border-radius:10px; background:#fff;
+}
+.s-type-list{
+  background:#fff !important; border:1px solid var(--glass-border);
+  border-radius:10px; box-shadow:0 8px 22px rgba(0,0,0,.1); padding:8px 6px !important;
+}
+.s-type-list label{
+  display:block; padding:6px 14px; color:var(--ink);
+  border-radius:8px; cursor:pointer; transition:all .15s;
+}
+.s-type-list label:hover{ background:rgba(214,41,118,.06); color:var(--accent); }
+
 /* ---------- 降级 ---------- */
 @media (prefers-reduced-motion: reduce){
   *{ animation:none !important; transition:none !important; }
