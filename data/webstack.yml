@@ -4,7 +4,7 @@
   icon: fa-star
   links: 
     - title: YouTube
-      logo: 
+      logo: images/logos/auto/youtube-com.png
       url: https://www.youtube.com/channel/UCgV1t5fHFvAVPyprEWvuIzg/
       description: 一个专注于软件安装，科学上网教学的频道！
     - title: 资源博客
@@ -26,11 +26,12 @@
       url: https://universalbus.cn?s=gB8CJKmJdd
       description: 流媒体影音账号合租平
     - title: "万事达虚拟银行卡"
+      logo: images/logos/auto/bybit-com.png
       url: "https://www.bybit.com/invite?ref=QAM3MOJ"
       description: "国内usdt消费,支付宝、微信充值，海外消费。"
     - title: visa虚拟卡
       qrcode: images/qrcodes/usdt.png
-      logo:
+      logo: images/logos/auto/app-pokepay-cc.png
       url: https://app.pokepay.cc/pages/passport/invitation?r=145892
       description: usdt套现，国内拼多多消费，支付宝消费
     - title: IOS (苹果) ID 礼品卡/兑换码
@@ -38,28 +39,31 @@
       url: https://app.xintaifree.com?from=5431/
       description: shadowrocket 小火箭 | quantumult x 圈x | 礼品卡/兑换码 | ChatGPT plus 应有尽有！⏰客服在线时间08:00-23:00
     - title: Telegram
-      logo: 
+      logo: images/logos/auto/t-me.png
       url: https://t.me/kjgxZY/
       description: 科技共享资源频道
     - title: Telegram群组
+      logo: images/logos/auto/t-me.png
       url: https://t.me/+qf_DtRZ90ys2ZDBl/
       description: 沟通交流，资源分享
     - title: 接码平台
-      logo:  
+      logo: images/logos/auto/hero-sms-com.png
       url: https://hero-sms.com/?ref=489021/
       description: 购买各国电话号码，用于在社交网络、聊天工具和其他服务中注册。
     - title: Base64编码解码
+      logo: images/logos/auto/99688988-xyz.png
       url: https://99688988.xyz/base64-string-converter/
       description: 将utf-8能表示的所有字符进行Base64编码加密解密
     - title: 文叔叔
-      logo: 
+      logo: images/logos/auto/wenshushu-cn.png
       url: https://www.wenshushu.cn/
       description: 传临时文件,大文件、永不限速
     - title: 网络剪贴板
-      logo: 
+      logo: images/logos/auto/clipboard-168668520-xyz.png
       url: https://clipboard.168668520.xyz/
       description: 提供数据暂存和传送服务
     - title: UUID生成
+      logo: images/logos/auto/99688988-xyz.png
       url: https://99688988.xyz/uuid-generator/
       description: UUID在线生成
     - title: 轻抖
@@ -79,36 +83,46 @@
     - term: 综合服务平台
       links:
         - title: OPC社区（云上栏山）
+          logo: images/logos/auto/hnysls-cn.png
           url: https://www.hnysls.cn/
           description: 湖南云上栏山数据服务有限公司支持设立，提供算力支撑、合规指导、融资对接、场景落地等全链路服务，赋能AI个体创业。
         - title: WeOPC 全国一站式平台
+          logo: images/logos/auto/weopc-com-cn.png
           url: https://weopc.com.cn/
           description: 连接全国OPC社区，覆盖26+城市136个社区，提供免费工位、算力补贴、项目投资、订单对接等全周期创业支持。
         - title: OPC社区网
+          logo: images/logos/auto/opczone-cn.png
           url: https://www.opczone.cn/
           description: AI创新创业赋能平台，集算力服务、项目路演、创业加速、课程培训、活动对接于一体的一站式创业服务平台。
         - title: OPC一站式服务平台
+          logo: images/logos/auto/opcservice-cn.png
           url: https://opcservice.cn/
           description: 赋能超级个体，成就一人公司，提供算力补贴、政策申报、创业指导等综合服务。
         - title: OPC网·一人公司网
+          logo: images/logos/auto/opcwang-com.png
           url: https://opcwang.com/
           description: 提供一人公司政策、创业指南、赚钱模式与AI算力租赁、智能体工具，助力超级个体单人成军、快速变现。
         - title: OPC社区服务平台（stepipro）
+          logo: images/logos/auto/opc-stepipro-com.png
           url: https://opc.stepipro.com/
           description: 为创业者提供一站式综合服务：政策解读与补贴申请、AI模型评测与部署、应用场景对接等。
         - title: OPC·明途创业平台
+          logo: images/logos/auto/opc-mingto-net.png
           url: https://opc.mingto.net/
           description: 提供OPC办公系统、操作平台、创业工坊，打造可复制·可落地·可盈利的一人公司创业生态。
 
     - term: 社区运营方
       links:
         - title: 同橙OPC社区平台
+          logo: images/logos/auto/opcstore-com.png
           url: https://opcstore.com/
           description: 同橙科创产业发展集团运营，集成多模型AI工具、数字员工矩阵与算力调度分发，全国布局稳步推进。
         - title: 同橙科创（官网）
+          logo: images/logos/auto/tongcc-com.png
           url: https://www.tongcc.com/
           description: 经国家市场监督管理总局批准的全国无区域性科创产业集团，以科技成果转化、创新投资与生态构建为核心使命。
         - title: 罗普特·同橙OPC社区
+          logo: images/logos/auto/ropeok-com.png
           url: https://www.ropeok.com/show_2248.aspx
           description: 罗普特（688619）联合同橙科创打造，以AI算力赋能沪滇产业，构建"单人成军"新型创业生态。
 
@@ -117,33 +131,43 @@
   icon: fa-solid fa-newspaper
   links:
     - title: 新华网 | "一人公司"崛起 AI赋能"超级个体"
+      logo: images/logos/auto/news-cn.png
       url: https://www.news.cn/tech/20260709/95eb319491d149cdb969557c3591267a/c.html
       description: 新华网深度报道：国内三大运营商推出普惠AI云服务，聚焦小微创业群体，OPC创业模式迅速走红。
     - title: 央广网 | "一人公司"崛起 AI赋能"超级个体"
+      logo: images/logos/auto/tech-cnr-cn.png
       url: https://tech.cnr.cn/gstj/20260709/t20260709_527699041.shtml
       description: 央广网报道：依托AI智能体、无代码工具，普通创业者无需组建庞大团队即可独立完成全链路商业闭环。
     - title: 《全国OPC发展观察报告（2026）》发布
+      logo: images/logos/auto/finance-sina-cn.png
       url: https://finance.sina.cn/2026-07-01/detail-inifhvwy3098442.d.html
       description: 新华社报道：杭州首届"AI+OPC"创新发展大会上正式发布，解码OPC新纪元，上城区"鸿鹄汇"为全国首个OPC创业加速社区。
     - title: OPC爆火，单人便可成军
+      logo: images/logos/auto/news-qq-com.png
       url: https://news.qq.com/rain/a/20260614A00OT900
       description: 腾讯新闻报道：截至2025年6月全国OPC数量已突破1600万家，占企业总量的27.4%。
     - title: 被写入多地"十五五"规划，OPC凭什么站上风口？
+      logo: images/logos/auto/ndrc-gov-cn.png
       url: https://www.ndrc.gov.cn/wsdwhfz/202605/t20260515_1405211.html
       description: 国家发改委报道：超20个城市密集出台OPC专项扶持政策，OPC社区在一线城市密集涌现。
     - title: 30余家OPC创业代表亮相数字经济产业博览会
+      logo: images/logos/auto/beijing-gov-cn.png
       url: https://www.beijing.gov.cn/fuwu/lqfw/gggs/202607/t20260703_4744920.html
       description: 北京市政府报道：海淀区30余家OPC创业代表亮相2026全球数字经济大会，AI时代"超级个体"创新活力汹涌。
     - title: 浦发银行推出AI-OPC一站式"工具箱"
+      logo: images/logos/auto/finance-sina-com-cn.png
       url: https://finance.sina.com.cn/jjxw/2026-07-09/doc-inihefvc1492892.shtml
       description: 2026数字经济产业博览会暨全球OPC共创节在北京举办，全球AI-OPC生态共同体正式发布。
     - title: 浙江发布《人工智能OPC术语》团体标准
+      logo: images/logos/auto/zjnews-zjol-com-cn.png
       url: https://zjnews.zjol.com.cn/yc/qmt/202607/t20260704_31765560.shtml
       description: 浙江率先推出行业术语标准，为OPC新兴领域提供规范化指引，一人公司有了行业词典。
     - title: 新华网财经观察 | "一人公司"的那些事
+      logo: images/logos/auto/news-cn.png
       url: https://www.news.cn/fortune/20260321/943f6293dbe14f918ef29a481d12a6d0/c.html
       description: 新华网深度观察：OPC正在成为AI时代的创业新范式，吸引越来越多的创业者投身其中。
     - title: 2026年"一人公司OPC"彻底迎来大爆发
+      logo: images/logos/auto/sohu-com.png
       url: https://www.sohu.com/a/1012243670_489550
       description: 搜狐报道：个体经营者借助AI能力，独自打通从产品构思、设计研发到市场推广的全流程商业闭环。
 
@@ -154,27 +178,33 @@
     - term: AI智能体平台
       links:
         - title: OpenHex
+          logo: images/logos/auto/ithome-com.png
           url: https://www.ithome.com/0/973/432.htm
           description: 面向OPC的Agent构建、运行与调度平台，一人公司可用自然语言创建具备身份、记忆和执行能力的Live Agent。
         - title: OPC Store（同橙）
+          logo: images/logos/auto/opcstore-com.png
           url: https://opcstore.com/
           description: 集成多模型AI工具、数字员工矩阵与算力调度分发（"算力超市"），为创业者提供全要素资源。
 
     - term: 算力与云服务
       links:
         - title: WeOPC 算力补贴
+          logo: images/logos/auto/weopc-com-cn.png
           url: https://weopc.com.cn/policy
           description: 最高1000万算力券补贴，免费使用主流AI开发工具，覆盖全国OPC社区。
         - title: OPC社区网 算力池
+          logo: images/logos/auto/opczone-cn.png
           url: https://www.opczone.cn/
           description: 汇集深圳、上海等地算力券补贴政策及数据集资源，对AI企业最高可抵扣60%算力费用。
 
     - term: 创业服务
       links:
         - title: WeOPC 订单市场
+          logo: images/logos/auto/weopc-com-cn.png
           url: https://weopc.com.cn/marketplace
           description: 连接300+生态伙伴，获取AI漫剧、开发、设计等订单，资源对接一站式服务。
         - title: OPC社区网 服务商
+          logo: images/logos/auto/opczone-cn.png
           url: https://www.opczone.cn/
           description: 工商代办、财税服务、知识产权、技术服务、设计服务、咨询、投融资、项目申报等全链条创业服务。
 
@@ -185,45 +215,57 @@
     - term: 研究报告
       links:
         - title: 清华大学：2026一人公司（OPC）发展研究报告
+          logo: images/logos/auto/sohu-com.png
           url: https://www.sohu.com/a/984119582_121713417
           description: 清华大学发布，采用"一人公司工作流"生产，探讨AI时代个体创业新范式，附137页报告解读。
         - title: 2026一人公司OPC发展研究报告（腾讯云）
+          logo: images/logos/auto/cloud-tencent-com.png
           url: https://cloud.tencent.com/developer/article/2634495
           description: 从工具到生态的进化，分析OPC如何从AI工具发展为完整创业生态，附完整研究报告。
         - title: 超级个体OPC：创业深度研究及实操指南
+          logo: images/logos/auto/zhuanlan-zhihu-com.png
           url: https://zhuanlan.zhihu.com/p/2011781062418792637
           description: 万字干货长文，按AI介入深度和团队规模分类典型模式，含月入30万实战路径分析。
         - title: 2026年OPC创业全景指南
+          logo: images/logos/auto/blog-csdn-net.png
           url: https://blog.csdn.net/HiWangWenBing/article/details/158318218
           description: CSDN万字指南：涵盖20+城市OPC政策、AI工具选型、创业路径全流程解析。
         - title: OPC深度研究：从AI工具到创业生态
+          logo: images/logos/auto/opcwang-com.png
           url: https://www.opcwang.com/article/2026yi-ren-gong-si-opcshen-du-yan-jiu-bao-gao-cong-ai-gong-ju-dao-chuang-ye-sheng-tai-chao-ji-ge-ti-yue-ru-30mo-shi-zhan-lu-jing
           description: AI填平技能洼地，一人公司月入30万实战路径分析，从AI编程工具到流量平台的完整创业生态解剖。
 
     - term: 入门指南
       links:
         - title: 新手入门：OPC社区是什么，怎么申请（避坑指南）
+          logo: images/logos/auto/zhuanlan-zhihu-com.png
           url: https://zhuanlan.zhihu.com/p/2017238016758937574
           description: 知乎热门：详解OPC概念、政府推动逻辑、社区申请流程及完整避坑指南。
         - title: 全国OPC社区全景指南
+          logo: images/logos/auto/tahou-com.png
           url: https://www.tahou.com/article/210055322061733893
           description: 梳理全国OPC社区发展现状，介绍华北、华东、华南各地区OPC社区分布及入驻方式。
         - title: 2026年全国OPC社区全景分析+商业落地指南
+          logo: images/logos/auto/zhuanlan-zhihu-com.png
           url: https://zhuanlan.zhihu.com/p/2019800232624436646
           description: 知乎深度：2026年创投圈最火的OPC概念全景分析及商业落地实操指南。
         - title: 百度百科：一人公司
+          logo: images/logos/auto/baike-baidu-com.png
           url: https://baike.baidu.com/item/%E4%B8%80%E4%BA%BA%E5%85%AC%E5%8F%B8/67142772
           description: 百度百科OPC词条：AI协同下的全新创业形态，个人可独立完成全流程的创业模式。
 
     - term: 培训课程
       links:
         - title: 混沌学园
+          logo: images/logos/auto/hundun-cn.png
           url: https://www.hundun.cn/
           description: 《超级个体计划》出品方，为终身学习者提供200+商业案例及线上线下实战演练。
         - title: OPC社区网 课程中心
+          logo: images/logos/auto/opczone-cn.png
           url: https://www.opczone.cn/
           description: 华为云码道实战营、UI/UX设计、数字营销实战、深度学习与神经网络等OPC创业课程。
         - title: OPC社区 AI创业训练营
+          logo: images/logos/auto/hnysls-cn.png
           url: https://www.hnysls.cn/news
           description: 湖南云上栏山OPC社区定期举办AI创业训练营，含算力实操、政策解读等实战内容。
 
@@ -232,21 +274,27 @@
   icon: fa-solid fa-calendar-days
   links:
     - title: 2026全球OPC共创节
+      logo: images/logos/auto/guoqing-china-com-cn.png
       url: http://guoqing.china.com.cn/2026-06/05/content_118532708.shtml
       description: 7月2-3日北京国家会议中心，全球AI新生代共创现场，全球AI-OPC生态共同体正式发布。
     - title: 2026上海超级个体（OPC）经济大会
+      logo: images/logos/auto/36kr-com.png
       url: https://www.36kr.com/p/3835756916651138
       description: 临港新片区"超级个体首创地"主题大会，国内率先聚焦超级个体经济的大会。
     - title: 首届"AI+OPC"创新发展大会（杭州）
+      logo: images/logos/auto/zj-xinhuanet-com.png
       url: http://www.zj.xinhuanet.com/20260701/d365fd3ca23c4d0994317423d08358ff/c.html
       description: 杭州举办，发布《全国OPC发展观察报告（2026）》，上城区"鸿鹄汇"为全国首个OPC创业加速社区。
     - title: OPC社区网 近期活动
+      logo: images/logos/auto/opczone-cn.png
       url: https://www.opczone.cn/
       description: 汇集光谷创业大赛、AI漫剧公开课、深圳通用人工智能大会、OPC社区发布会等活动信息。
     - title: WeOPC 社区入驻
+      logo: images/logos/auto/weopc-com-cn.png
       url: https://weopc.com.cn/
       description: 免费注册即可加入全国OPC社区网络，享受工位、算力、投资、订单等全周期服务。
     - title: OPC社区（云上栏山）入驻
+      logo: images/logos/auto/hnysls-cn.png
       url: https://www.hnysls.cn/member/register
       description: 湖南云上栏山OPC社区入驻通道，500+生态资源、200+政策收录、50+生态伙伴。
 
@@ -255,18 +303,23 @@
   icon: fa-solid fa-landmark
   links:
     - title: 国家发改委 | OPC写入多地"十五五"规划
+      logo: images/logos/auto/ndrc-gov-cn.png
       url: https://www.ndrc.gov.cn/wsdwhfz/202605/t20260515_1405211.html
       description: 超20个城市密集出台OPC专项扶持政策，OPC社区在一线城市密集涌现。
     - title: OPC社区网 政策文件
+      logo: images/logos/auto/opczone-cn.png
       url: https://www.opczone.cn/
       description: 汇集宿城区、宿迁市、徐州市铜山区、南京江北新区等地OPC专项扶持政策文件。
     - title: WeOPC 政策红利
+      logo: images/logos/auto/weopc-com-cn.png
       url: https://weopc.com.cn/policy
       description: 全国OPC政策汇总，免费工位与政策补贴、算力补贴、项目投资等一站式申报。
     - title: OPC社区（云上栏山）最新政策
+      logo: images/logos/auto/hnysls-cn.png
       url: https://www.hnysls.cn/policy
       description: 苏州市AI产业措施、苏州工业园区OPC发展细则、AI创新型企业认定等政策收录。
     - title: 北京市《支持人工智能OPC创新发展行动方案》
+      logo: images/logos/auto/finance-sina-com-cn.png
       url: https://finance.sina.com.cn/jjxw/2026-07-09/doc-inihefvc1492892.shtml
       description: 北京市经济和信息化局出台OPC专项支持政策，护航OPC发展。
 
@@ -1257,36 +1310,48 @@
   icon: fa-link
   friend:
     - title: 子页面一
+      logo: images/favicon.png
       url: sub1
       description: 本站子页面1
     - title: 子页面二
+      logo: images/favicon.png
       url: sub2
       description: 本站子页面2
     - title: webstack.cc
+      logo: images/logos/auto/webstack-cc.png
       url: https://webstack.cc
       description: webstack - 设计师网址导航
     - title: 一为导航
+      logo: images/logos/auto/nav-iowen-cn.png
       url: https://nav.iowen.cn/
       description: onenav主题演示站
     - title: 趣导航
+      logo: images/logos/auto/qssily-com.png
       url: https://qssily.com/
     - title: 404导航
+      logo: images/logos/auto/404dh-icu.png
       url: https://www.404dh.icu/
       description: 只导航优质资源
     - title: OPENI
+      logo: images/logos/auto/openi-cn.png
       url: https://openi.cn/
     - title: 飞猪ai导航
+      logo: images/logos/auto/feizhuke-com.png
       url: https://feizhuke.com/
       description: AI工具集箱
     - title: bioit导航
+      logo: images/logos/auto/bioit-top.png
       url: https://www.bioit.top/
       description:
     - title: 所长导航
+      logo: images/logos/auto/liutongxu-github-io.png
       url: https://liutongxu.github.io/
       description:
     - title: 一为webstack
+      logo: images/logos/auto/webstack-iotheme-cn.png
       url: https://webstack.iotheme.cn/
     - title: iplaycode
+      logo: images/logos/auto/iplaycode-github-io.png
       url: https://iplaycode.github.io/nav/
       description: iplaycode的demo导航网站
 ---
