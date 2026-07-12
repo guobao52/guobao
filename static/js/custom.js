@@ -25,6 +25,7 @@
       $section.toggleClass("is-collapsed", collapsed);
       $section.find(".category-toggle").first().attr("aria-expanded", String(!collapsed));
       if (save !== false) writeSectionState();
+      scheduleMenuRefresh();
     }
 
     function restoreSections() {
@@ -86,16 +87,33 @@
     });
 
     var scrollTicking = false;
+    var menuRefreshTimer = null;
+    var activeMenuIndex = -1;
+
+    function refreshMenuPositions() {
+      for (var i = 0; i < menuItems.length; i += 1) {
+        menuItems[i].top = menuItems[i].target.offset().top;
+      }
+      updateActiveMenu();
+    }
+
+    function scheduleMenuRefresh() {
+      window.clearTimeout(menuRefreshTimer);
+      menuRefreshTimer = window.setTimeout(refreshMenuPositions, 380);
+    }
+
     function updateActiveMenu() {
       scrollTicking = false;
       if (!menuItems.length) return;
-      var marker = $(window).scrollTop() + 130;
-      var current = menuItems[0];
+      var marker = window.pageYOffset + 130;
+      var currentIndex = 0;
       for (var i = 0; i < menuItems.length; i += 1) {
-        if (menuItems[i].target.offset().top <= marker) current = menuItems[i];
+        if (menuItems[i].top <= marker) currentIndex = i;
       }
+      if (currentIndex === activeMenuIndex) return;
+      activeMenuIndex = currentIndex;
       $("#main-menu li").removeClass("active");
-      current.link.parent("li").addClass("active");
+      menuItems[currentIndex].link.parent("li").addClass("active");
     }
 
     $(window).on("scroll.dnyun", function () {
@@ -104,12 +122,18 @@
         window.requestAnimationFrame(updateActiveMenu);
       }
     });
-    updateActiveMenu();
+    refreshMenuPositions();
+
+    var resizeTimer = null;
+    $(window).on("resize.dnyun", function () {
+      window.clearTimeout(resizeTimer);
+      resizeTimer = window.setTimeout(refreshMenuPositions, 140);
+    });
 
     function initialiseTooltips() {
       if (!$.fn.tooltip) return;
-      try { $("[data-toggle='tooltip']").tooltip("destroy"); } catch (error) {}
-      $("[data-toggle='tooltip']").tooltip({
+      $("body").tooltip({
+        selector: "[data-toggle='tooltip']",
         html: true,
         container: "body",
         placement: "bottom",
