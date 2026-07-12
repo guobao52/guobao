@@ -21,8 +21,6 @@
 <link rel='stylesheet' id='bootstrap-css'  href='./css/bootstrap.css?ver=3.4.1' type='text/css' media='all' />
 <link rel='stylesheet' id='nav-css'  href='./css/nav.css?ver=2.0.0' type='text/css' media='all' />
 <link rel='stylesheet' id='custom-css' href='./css/custom.css' type='text/css' media='all' />
-<link rel='stylesheet' id='apple-preview-css' href='./css/apple-preview.css' type='text/css' media='all' />
-<link rel='stylesheet' id='phenomenon-preview-css' href='./css/phenomenon-preview.css' type='text/css' media='all' />
 <link rel='stylesheet' id='instagram-light-preview-css' href='./css/instagram-light-preview.css' type='text/css' media='all' />
 
 <script type='text/javascript' src='./js/jquery-1.11.1.min.js'></script>
@@ -98,12 +96,6 @@
             <li class="hidden-xs">
                 <a href="#" data-toggle="sidebar" ><i class="fa fa-bars"></i></a>
             </li>
-            <li>
-              <div id="he-plugin-simple"></div>
-              <script>WIDGET = {CONFIG: {"modules": "12034","background": 5,"tmpColor": "aaa","tmpSize": 16,"cityColor": "aaa","citySize": 16,"aqiSize": 16,"weatherIconSize": 24,"alertIconSize": 18,"padding": "30px 10px 30px 10px","shadow": "1","language": "auto","borderRadius": 5,"fixed": "false","vertical": "middle","horizontal": "left","key": "a922adf8928b4ac1ae7a31ae7375e191"}}</script>
-              <script async src="https://widget.heweather.net/simple/static/js/he-simple-common.js?v=1.1"></script>
-            </li> 
-            <!-- 天气 end -->
       </ul>
         {{ if .Site.Params.Github.enable }}
         <ul class="user-info-menu right-links list-inline list-unstyled">
@@ -144,7 +136,7 @@
                     <a href="{{ .url }}" target="_blank" class="xe-widget xe-conversations box2 label-info" data-toggle="tooltip" data-placement="bottom" data-html="true" title="<img src='{{ .qrcode }}' width='128'>">
                         <div class="xe-comment-entry">
                             <div class="xe-user-img">
-                                <img class="img-circle lazy" src="./images/favicon.png" data-src="{{ .logo }}" onerror="javascript:this.src='./images/favicon.png'" width="40">
+                                <img class="img-circle lazy" src="./images/favicon.png" data-src="{{ .logo }}" onerror="javascript:this.src='./images/favicon.png'" width="40" loading="lazy" decoding="async" fetchpriority="low">
                             </div>
                             <div class="xe-comment">
                                 <div class="xe-user-name overflowClip_1">
@@ -161,7 +153,7 @@
                     title="{{ .description }} {{ .url }}">
                         <div class="xe-comment-entry">
                             <div class="xe-user-img">
-                                <img class="img-circle lazy" src="./images/favicon.png" data-src="{{ .logo }}" onerror="javascript:this.src='./images/favicon.png'" width="40">
+                                <img class="img-circle lazy" src="./images/favicon.png" data-src="{{ .logo }}" onerror="javascript:this.src='./images/favicon.png'" width="40" loading="lazy" decoding="async" fetchpriority="low">
                             </div>
                             <div class="xe-comment">
                                 <div class="xe-user-name overflowClip_1">
@@ -193,7 +185,7 @@
                     <a href="{{ .url }}" target="_blank" class="xe-widget xe-conversations box2 label-info" data-toggle="tooltip" data-placement="bottom" data-html="true" title="<img src='{{ .qrcode }}' width='128'>">
                         <div class="xe-comment-entry">
                             <div class="xe-user-img">
-                                <img class="img-circle lazy" src="./images/favicon.png" data-src="{{ .logo }}" onerror="javascript:this.src='./images/favicon.png'" width="40">
+                                <img class="img-circle lazy" src="./images/favicon.png" data-src="{{ .logo }}" onerror="javascript:this.src='./images/favicon.png'" width="40" loading="lazy" decoding="async" fetchpriority="low">
                             </div>
                             <div class="xe-comment">
                                 <div class="xe-user-name overflowClip_1">
@@ -210,7 +202,7 @@
                     title="{{ .description }} {{ .url }}">
                         <div class="xe-comment-entry">
                             <div class="xe-user-img">
-                                <img class="img-circle lazy" src="./images/favicon.png" data-src="{{ .logo }}" onerror="javascript:this.src='./images/favicon.png'" width="40">
+                                <img class="img-circle lazy" src="./images/favicon.png" data-src="{{ .logo }}" onerror="javascript:this.src='./images/favicon.png'" width="40" loading="lazy" decoding="async" fetchpriority="low">
                             </div>
                             <div class="xe-comment">
                                 <div class="xe-user-name overflowClip_1">
