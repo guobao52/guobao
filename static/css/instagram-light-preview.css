@@ -108,10 +108,14 @@ body::before { display: none !important; }
 
 /* Compact profile-style search header */
 #search {
-  position: relative !important; max-width: 1080px !important; min-height: 390px !important;
+  position: relative !important; max-width: 1420px !important; min-height: 390px !important;
   margin: 64px auto 0 !important; padding: 62px 48px 54px !important;
   background: transparent !important; border: 0 !important; border-bottom: 1px solid var(--ig-line) !important;
   border-radius: 0 !important; box-shadow: none !important; backdrop-filter: none !important;
+  background-image: url('../images/dnyun-watermark.png') !important;
+  background-repeat: no-repeat !important;
+  background-position: 88% 46% !important;
+  background-size: 300px auto !important;
 }
 #search::before {
   content: "发现你的下一站。" !important; display: block !important;
@@ -169,8 +173,9 @@ ul.search-type li input:checked + label {
 #search-text::placeholder { color: #9a9ca1 !important; }
 #search-text:focus { background: #fff !important; border-color: rgba(0,149,246,.5) !important; box-shadow: 0 0 0 4px rgba(0,149,246,.1), 0 10px 28px rgba(30,35,45,.07) !important; }
 #super-search-fm button {
-  top: 50% !important; right: 10px !important; bottom: auto !important;
-  width: 40px !important; min-height: 40px !important;
+  display: grid !important; place-items: center !important;
+  top: 50% !important; right: 9px !important; bottom: auto !important;
+  width: 40px !important; height: 40px !important; min-height: 40px !important; padding: 0 !important;
   color: #fff !important; background: var(--ig-text) !important;
   border: 0 !important; border-radius: 50% !important; box-shadow: 0 6px 16px rgba(15,16,18,.16) !important;
   transform: translateY(-50%) !important; transition: transform .24s var(--ig-spring), box-shadow .2s ease !important;
@@ -264,13 +269,14 @@ footer.main-footer .foot-button a:hover { color: #111 !important; background: #f
   .navbar.user-info-navbar { display: none !important; }
   .page-container .main-content { padding: 66px 15px 55px !important; }
   #search { min-height: 355px !important; margin: 0 !important; padding: 48px 1px 38px !important; }
+  #search { background-image: none !important; }
   #search::before { margin-bottom: 10px !important; font-size: 42px !important; letter-spacing: -.045em !important; }
   #search::after { margin-bottom: 28px !important; font-size: 13px !important; }
   #search-list, #super-search-fm { width: 100% !important; }
   ul.search-type { gap: 6px !important; }
   ul.search-type li label, .s-type > span { min-height: 37px !important; padding: 9px 13px !important; }
   #search-text { height: 54px !important; padding-right: 64px !important; border-radius: 15px !important; }
-  #super-search-fm button { right: 7px !important; width: 40px !important; min-height: 40px !important; border-radius: 50% !important; }
+  #super-search-fm button { right: 7px !important; width: 40px !important; height: 40px !important; min-height: 40px !important; border-radius: 50% !important; }
   .content-toolbar { padding: 35px 0 20px !important; }
   .content-toolbar__copy strong { font-size: 28px !important; }
   .content-toolbar__actions { margin-top: 18px !important; }
