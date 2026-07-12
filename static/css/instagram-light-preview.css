@@ -177,10 +177,20 @@ ul.search-type li input:checked + label {
 .category-toggle { min-height: 68px !important; padding: 13px 2px !important; }
 .category-title { color: var(--ig-text) !important; font-size: 18px !important; font-weight: 700 !important; letter-spacing: -.018em !important; }
 .category-icon {
-  width: 38px !important; height: 38px !important; color: #fff !important;
-  background: var(--ig-gradient) !important; border: 2px solid #fff !important;
-  border-radius: 50% !important; box-shadow: 0 0 0 1px #f66a98 !important;
+  width: 38px !important; height: 38px !important;
+  color: #5e5ce6 !important; background: #efefff !important;
+  border: 1px solid rgba(94,92,230,.12) !important;
+  border-radius: 11px !important; box-shadow: inset 0 1px 0 rgba(255,255,255,.8) !important;
+  transition: transform .24s var(--ig-spring), background .2s ease !important;
 }
+.category-toggle:hover .category-icon { transform: scale(1.06) rotate(-2deg) !important; }
+.category-section:nth-of-type(8n + 2) .category-icon { color: #007aff !important; background: #eaf4ff !important; border-color: rgba(0,122,255,.12) !important; }
+.category-section:nth-of-type(8n + 3) .category-icon { color: #00a67e !important; background: #e9f9f4 !important; border-color: rgba(0,166,126,.12) !important; }
+.category-section:nth-of-type(8n + 4) .category-icon { color: #ff7a00 !important; background: #fff3e7 !important; border-color: rgba(255,122,0,.13) !important; }
+.category-section:nth-of-type(8n + 5) .category-icon { color: #e93471 !important; background: #ffedf3 !important; border-color: rgba(233,52,113,.12) !important; }
+.category-section:nth-of-type(8n + 6) .category-icon { color: #7b3ff2 !important; background: #f3edff !important; border-color: rgba(123,63,242,.12) !important; }
+.category-section:nth-of-type(8n + 7) .category-icon { color: #1b8a3f !important; background: #ecf8ef !important; border-color: rgba(27,138,63,.12) !important; }
+.category-section:nth-of-type(8n + 8) .category-icon { color: #d97706 !important; background: #fff6df !important; border-color: rgba(217,119,6,.12) !important; }
 .category-count { color: #909399 !important; background: transparent !important; border: 0 !important; font-size: 11px !important; }
 .category-chevron { color: #777b82 !important; font-size: 15px !important; }
 .category-body { grid-template-columns: repeat(auto-fill, minmax(190px, 1fr)) !important; gap: 10px !important; padding: 2px 0 20px !important; }
